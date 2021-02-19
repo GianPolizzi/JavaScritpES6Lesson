@@ -1,0 +1,1 @@
+Sono il file che hai richiesto dal server locale attraverso la chiamata AJAX

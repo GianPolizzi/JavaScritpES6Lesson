@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* vh: viewport height --> area visibile nella mia pagina web */
+    height: 100vh;
+    display: flex;
+    background-color: blue;
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    /* Creo una griglia a 12 colonne (carte disposte in fila) */
+    display: flex;
+    /* Dispongo le carte in 3 righe e 4 colonne */
+    flex-wrap: wrap;
+    /* Grazie alla flex del body, la griglia viene disposta al centro */
+    margin: auto;
+    /* Effetto 3D*/
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    /* Con questo margine restano disposte su 3 righe e 4 colonne*/
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform.5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform.2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+    
+}
+
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    background: rgb(36, 182, 240);
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.pulsantiera, .classifica {
+    margin-top: 20px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+.input-name {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.start{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(31, 216, 31);
+}
+
+.stop {
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(230, 24, 17);
+}
+
+.show-timer {
+    margin-top: 20px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+.timer {
+    padding: 10px 92px;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    font-size: medium;
+}

@@ -1,0 +1,26 @@
+{
+    "prop1" : {
+        "prop-a" : "stringa",
+        "prop-b" : 100,
+        "prop-c" : true
+    },
+
+    "prop2" : [
+        "Posso creare",
+        "array di stringhe",
+        "ma non posso",
+        "creare funzioni"
+    ],
+
+    "testo" : {
+        "titolo" : "Imparare ad usare JSON",
+        "paragrafo" : "Lorem ipsum dolor sic amet domina tua",
+        "footer" : "Sono il piè di pagina"
+    },
+
+    "utenti" : [
+        "Gianmarco",
+        "Simone",
+        "Luca"
+    ]
+}

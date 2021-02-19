@@ -1,0 +1,12 @@
+select {
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 26px;
+    padding-left: 26px;
+    margin-top: 3px;
+}
+
+body {
+    background-color: burlywood;
+}

@@ -1,0 +1,5 @@
+Prima di aprire il browser:
+
+1. Avviare il terminale;
+2. Posizionarsi all'interno della cartella jsonplaceholder-master;
+3. Digitare il comando $: npm start
