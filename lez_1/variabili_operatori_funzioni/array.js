@@ -17,13 +17,13 @@ arrayNum[array.length] = 5;
 //oppure
 arrayNum.push(6);
 
-//Inserire un elemento all'inizio dell'array
+//Inserire un elemento all'inizio dell'array, quindi sposta l'array verso destra
 arrayNum.unshift('inizio da zero');
 
 //Eliminare l'ultimo elemento dell'array
 arrayNum.pop();
 
-//Eliminare il primo dell'array
+//Eliminare il primo dell'array, quindi sposta l'array verso sinistra
 arrayNum.shift();
 
 //Azzerare array
